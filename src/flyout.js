@@ -1,9 +1,7 @@
-'use strict';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-let React = require('react');
-let ReactDOM = require('react-dom');
-
-class Flyout extends React.Component {
+export default class Flyout extends React.Component {
   constructor(props) {
     super(props);
     this.handleClickDocument = this.handleClickDocument.bind(this);
@@ -61,5 +59,3 @@ Flyout.propTypes = {
   open: React.PropTypes.bool.isRequired,
   onRequestClose: React.PropTypes.func.isRequired,
 };
-
-module.exports = Flyout;
