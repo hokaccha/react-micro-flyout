@@ -51,7 +51,9 @@ export default class Flyout extends React.Component {
       style.display = 'none';
     }
 
-    return <div {...this.props} style={style}>{this.props.children}</div>;
+    const { onRequestClose, ...divProps } = this.props
+    
+    return <div {...divProps} style={style}>{this.props.children}</div>;
   }
 }
 
