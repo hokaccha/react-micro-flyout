@@ -45,12 +45,16 @@ export default class Flyout extends React.Component {
   }
 
   render() {
-    let style = this.props.style || {};
+    let props = Object.assign({}, this.props);
+    let style = props.style || {};
 
-    if (!this.props.open) {
+    if (!props.open) {
       style.display = 'none';
     }
 
-    return <div {...this.props} style={style}>{this.props.children}</div>;
+    delete props.onRequestClose;
+    delete props.open;
+
+    return <div {...props} style={style}>{this.props.children}</div>;
   }
 }
