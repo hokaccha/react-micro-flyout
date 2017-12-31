@@ -1,6 +1,6 @@
 {
   "name": "react-micro-flyout",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A react component that provides minimum feature for flyout",
   "main": "lib/flyout.js",
   "files": ["README.md", "lib", "src"],
