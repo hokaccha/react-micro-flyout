@@ -54,8 +54,3 @@ export default class Flyout extends React.Component {
     return <div {...this.props} style={style}>{this.props.children}</div>;
   }
 }
-
-Flyout.propTypes = {
-  open: React.PropTypes.bool.isRequired,
-  onRequestClose: React.PropTypes.func.isRequired,
-};
